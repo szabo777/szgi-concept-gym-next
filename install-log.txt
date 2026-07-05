@@ -1,0 +1,29 @@
+npm verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+npm info using npm@11.13.0
+npm info using node@v24.16.0
+npm verbose title npm install
+npm verbose argv "install" "--loglevel" "verbose"
+npm verbose logfile logs-max:10 dir:C:\Users\umepo\AppData\Local\npm-cache\_logs\2026-07-05T11_23_57_082Z-
+npm verbose logfile C:\Users\umepo\AppData\Local\npm-cache\_logs\2026-07-05T11_23_57_082Z-debug-0.log
+npm verbose audit error FetchError: request to https://registry.npmjs.org/-/npm/v1/security/advisories/bulk failed, reason: unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca
+npm verbose audit error     at ClientRequest.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\minipass-fetch\lib\index.js:130:14)
+npm verbose audit error     at ClientRequest.emit (node:events:509:28)
+npm verbose audit error     at emitErrorEvent (node:_http_client:109:11)
+npm verbose audit error     at _destroy (node:_http_client:993:9)
+npm verbose audit error     at onSocketNT (node:_http_client:1014:5)
+npm verbose audit error     at process.processTicksAndRejections (node:internal/process/task_queues:91:21) {
+npm verbose audit error   code: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE',
+npm verbose audit error   errno: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE',
+npm verbose audit error   type: 'system'
+npm verbose audit error }
+
+up to date in 2s
+
+145 packages are looking for funding
+  run `npm fund` for details
+npm verbose cwd C:\Users\umepo\webprojektek\szgi-concept-gym-next
+npm verbose os Windows_NT 10.0.19045
+npm verbose node v24.16.0
+npm verbose npm  v11.13.0
+npm verbose exit 0
+npm info ok
