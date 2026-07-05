@@ -861,12 +861,11 @@ img {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.trainerContacts p {
+.trainerContacts p,
+.trainerContacts a {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #ffffff;
-  font-weight: 850;
 }
 
 .trainerContacts svg {
@@ -2920,3 +2919,246 @@ body {
     min-height: auto;
   }
 }
+/* =========================
+   STICKY NAV + CONTACT LINKS
+   ========================= */
+
+   .header {
+    position: sticky;
+    top: 0;
+    z-index: 9990;
+  }
+  
+  .mobileMenu {
+    position: fixed;
+    top: 76px;
+    left: 16px;
+    right: 16px;
+    z-index: 9989;
+  }
+  
+  .trainerContacts {
+    display: grid;
+    gap: 10px;
+    margin-top: 24px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .trainerContacts a,
+  .contactSocials a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-weight: 850;
+    text-decoration: none;
+    transition: all 0.25s var(--ease);
+  }
+  
+  .trainerContacts a svg,
+  .contactSocials a svg {
+    color: #ff1e27;
+    flex: 0 0 auto;
+  }
+  
+  .trainerContacts a:hover,
+  .contactSocials a:hover {
+    color: #ff1e27;
+    transform: translateX(4px);
+  }
+  
+  .contactSocials {
+    display: grid;
+    gap: 12px;
+    margin-top: 28px;
+  }
+  
+  @media (max-width: 640px) {
+    .mobileMenu {
+      top: 68px;
+    }
+  }
+  /* =========================
+   FIXED NAVBAR FINAL FIX
+   ========================= */
+
+.header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  z-index: 99999 !important;
+}
+
+/* Mivel a navbar fixed lett, kell felső hely a tartalomnak */
+.app {
+  padding-top: 72px;
+}
+
+/* A mobil hamburger lenyíló menü is mindig fent marad */
+.mobileMenu {
+  position: fixed !important;
+  top: 78px !important;
+  left: 16px !important;
+  right: 16px !important;
+  z-index: 99998 !important;
+}
+
+/* A piros scroll progress csík maradjon a navbar fölött */
+.scrollProgress {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 100000 !important;
+}
+
+/* Ne csússzon be a navbar alá az első section */
+.heroSection,
+.pageSectionDark,
+.pageSectionLight,
+.pricingPage,
+.equipmentPage,
+.trainersPage,
+.newsPage,
+.plansPage,
+.contactPage {
+  scroll-margin-top: 90px;
+}
+
+@media (max-width: 640px) {
+  .app {
+    padding-top: 68px;
+  }
+
+  .mobileMenu {
+    top: 70px !important;
+  }
+}
+/* =========================
+   MOBILE BACK TO HOME BUTTON
+   ========================= */
+
+   .mobileBackHome {
+    display: none;
+  }
+  
+  @media (max-width: 640px) {
+    .mobileBackHome {
+      position: fixed;
+      top: 82px;
+      left: 14px;
+      z-index: 99997;
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border: 1px solid rgba(255, 30, 39, 0.38);
+      border-radius: 999px;
+      background: rgba(10, 10, 10, 0.82);
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 900;
+      line-height: 1;
+      backdrop-filter: blur(12px);
+      transition: all 0.25s var(--ease);
+    }
+  
+    .mobileBackHome:hover,
+    .mobileBackHome:active {
+      background: #ff1e27;
+      transform: translateX(-2px);
+    }
+  }
+  /* =========================
+   MOBILE BACK BUTTON FINAL FIX
+   ========================= */
+
+.mobileBackHome {
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  .mobileBackHome {
+    position: fixed !important;
+    top: 84px !important;
+    left: 14px !important;
+    z-index: 100001 !important;
+
+    display: grid !important;
+    place-items: center !important;
+
+    width: 38px !important;
+    height: 38px !important;
+
+    border: 1px solid rgba(255, 30, 39, 0.65) !important;
+    border-radius: 999px !important;
+
+    background: rgba(0, 0, 0, 0.88) !important;
+    color: #ffffff !important;
+
+    font-size: 34px !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+
+    backdrop-filter: blur(14px) !important;
+    box-shadow: 0 0 18px rgba(255, 30, 39, 0.35) !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  .mobileBackHome:hover,
+  .mobileBackHome:active {
+    background: #ff1e27 !important;
+    transform: translateX(-2px) !important;
+  }
+}
+/* =========================
+   MOBILE BACK BUTTON MINIMAL
+   ========================= */
+
+   .mobileBackHome {
+    display: none !important;
+  }
+  
+  @media (max-width: 900px) {
+    .mobileBackHome {
+      position: fixed !important;
+      top: 86px !important;
+      left: 16px !important;
+      z-index: 100001 !important;
+  
+      display: block !important;
+  
+      width: auto !important;
+      height: auto !important;
+      padding: 0 !important;
+  
+      border: 0 !important;
+      border-radius: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      backdrop-filter: none !important;
+  
+      color: rgba(255, 255, 255, 0.42) !important;
+  
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-size: 30px !important;
+      font-weight: 400 !important;
+      line-height: 1 !important;
+  
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+    }
+  
+    .mobileBackHome:hover,
+    .mobileBackHome:active {
+      color: rgba(255, 255, 255, 0.78) !important;
+      transform: translateX(-2px) !important;
+      background: transparent !important;
+    }
+  }

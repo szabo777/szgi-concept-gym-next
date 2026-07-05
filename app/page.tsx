@@ -181,8 +181,11 @@ const trainers = [
     name: "Barta Krisztián",
     focus: "Erőemelés • Technikai alapok",
     phone: "+36 30 111 2233",
+    phoneHref: "tel:+36301112233",
     instagram: "@barta_strength",
+    instagramUrl: "https://www.instagram.com/barta_strength",
     facebook: "Barta Krisztián Coach",
+    facebookUrl: "https://www.facebook.com/",
     bio: "Precíz mozgásminta, stabil alapok és mérhető erőfejlődés.",
   },
   {
@@ -190,8 +193,11 @@ const trainers = [
     name: "Nagy Lilla",
     focus: "Alakformálás • Mobilitás",
     phone: "+36 30 222 3344",
+    phoneHref: "tel:+36302223344",
     instagram: "@lilla_training",
+    instagramUrl: "https://www.instagram.com/lilla_training",
     facebook: "Nagy Lilla Trainer",
+    facebookUrl: "https://www.facebook.com/",
     bio: "Női erőnléti programok, mobilitás és fenntartható rutinok.",
   },
   {
@@ -199,8 +205,11 @@ const trainers = [
     name: "Farkas Máté",
     focus: "Izomtömeg-növelés • Táplálkozás",
     phone: "+36 30 333 4455",
+    phoneHref: "tel:+36303334455",
     instagram: "@mate_muscle",
+    instagramUrl: "https://www.instagram.com/mate_muscle",
     facebook: "Farkas Máté Fitness",
+    facebookUrl: "https://www.facebook.com/",
     bio: "Tömegnövelő edzéstervezés, táplálkozási irányok és kontroll.",
   },
 ];
@@ -552,6 +561,16 @@ export default function Home() {
           ))}
         </div>
       )}
+    {view !== "home" && (
+      <button
+        type="button"
+        className="mobileBackHome"
+        onClick={() => switchView("home")}
+        aria-label="Vissza a főoldalra"
+      >
+        &lt;
+      </button>
+    )}
 
       <main key={view} className="fadeView">
         {view === "home" && (
@@ -1173,15 +1192,27 @@ function TrainersView() {
             <p>{trainer.bio}</p>
 
             <div className="trainerContacts">
-              <p>
+              <a href={trainer.phoneHref} aria-label={`${trainer.name} hívása`}>
                 <Phone size={17} /> {trainer.phone}
-              </p>
-              <p>
+              </a>
+
+              <a
+                href={trainer.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${trainer.name} Instagram oldala`}
+              >
                 <InstagramLogo /> Instagram: {trainer.instagram}
-              </p>
-              <p>
+              </a>
+
+              <a
+                href={trainer.facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${trainer.name} Facebook oldala`}
+              >
                 <FacebookLogo /> Facebook: {trainer.facebook}
-              </p>
+              </a>
             </div>
           </article>
         ))}
