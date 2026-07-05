@@ -657,7 +657,7 @@ function CustomCursor() {
       <div
         className="cursorGlow"
         style={{
-          transform: `translate3d(${position.x - 34}px, ${position.y - 34}px, 0)`,
+          transform: `translate3d(${position.x - 29}px, ${position.y - 29}px, 0)`,
         }}
       />
       <div
@@ -683,7 +683,7 @@ function HomeView({
     {
       src: "/images/gym-1.jpg",
       label: "INTERIOR",
-      title: "Sötét, fókuszált edzőtér",
+      title: "Rendezett és fókuszált edzőtér",
     },
     {
       src: "/images/gym-2.jpg",
@@ -702,7 +702,7 @@ function HomeView({
   useEffect(() => {
     const interval = window.setInterval(() => {
       setActiveSlide((current) => (current + 1) % heroSlides.length);
-    }, 2000);
+    }, 4000);
 
     return () => window.clearInterval(interval);
   }, [heroSlides.length]);
@@ -942,16 +942,6 @@ function TrainersPromo({ switchView }: { switchView: (view: View) => void }) {
         technikát és terhelést.
       </p>
 
-      <div className="trainerPreview">
-        {trainers.map((trainer) => (
-          <article key={trainer.initials}>
-            <span>{trainer.initials}</span>
-            <h3>{trainer.name}</h3>
-            <p>{trainer.focus}</p>
-          </article>
-        ))}
-      </div>
-
       <button className="primaryButton" onClick={() => switchView("trainers")}>
         Edzők megtekintése
       </button>
@@ -1107,7 +1097,7 @@ function ContactView() {
 
 
 function PlansView({ switchView }: { switchView: (view: View) => void }) {
-  const [openPlan, setOpenPlan] = useState(0);
+  const [openPlan, setOpenPlan] = useState(-1);
 
   return (
     <section className="pageSectionDark plansPage">
