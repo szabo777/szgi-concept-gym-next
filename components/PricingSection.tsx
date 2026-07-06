@@ -38,7 +38,7 @@ export default function PricingSection({ isStandalone = false }: PricingSectionP
 
       <div className="paymentMethods">
         <span>
-          <WalletCards size={18} /> KP / Készpénz
+          <WalletCards size={18} /> Készpénz
         </span>
         <span>
           <CreditCard size={18} /> Bankkártya

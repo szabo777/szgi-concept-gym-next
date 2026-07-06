@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
 import ScrollProgress from "@/components/ScrollProgress";
-import ProgressPathBackground from "@/components/ProgressPathBackground";
+import HeroBackgroundAnimation from "@/components/HeroBackgroundAnimation";
 
 const bebas = Bebas_Neue({
   subsets: ["latin"],
@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="hu">
       <body className={`${bebas.variable} ${spaceGrotesk.variable}`}>
         <div className="app">
-          <ProgressPathBackground />
+          <HeroBackgroundAnimation />
           <CustomCursor />
           <ScrollProgress />
           <Navbar />
