@@ -67,7 +67,7 @@ export default function ContactSection() {
             <Phone />
             <span>Telefon</span>
             <h3>
-              <a href="tel:+36305550198">+36 30 555 0198</a>
+              <a href="tel:+36301234567">+36 30 123 4567</a>
             </h3>
             <p>Hívj minket bérlet, edzői kérdés vagy teremhasználat miatt.</p>
           </article>

@@ -19,7 +19,7 @@ export default function Footer() {
           <Phone />
           <span>Telefonszám</span>
           <p>
-            <a href="tel:+36305550198">+36 30 555 0198</a>
+            <a href="tel:+36301234567">+36 30 123 4567</a>
           </p>
         </article>
 
