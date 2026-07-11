@@ -37,7 +37,7 @@ export default function TrainersSection({
     <section className="pageSectionDark trainersPage">
       <span className="eyebrow">EDZŐINK</span>
 
-      <h1>Szakértő figyelem, valódi fejlődés.</h1>
+      <h1>Szakértő figyelem, valódi fejlődés</h1>
 
       <div className="trainerGrid">
         {trainers.map((trainer) => (

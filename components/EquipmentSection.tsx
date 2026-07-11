@@ -28,7 +28,7 @@ export default function EquipmentSection() {
   return (
     <section className="pageSectionDark equipmentPage">
       <span className="eyebrow">GÉPPARKUNK</span>
-      <h1>Professzionális gépek minden fókuszhoz.</h1>
+      <h1>Professzionális gépek minden fókuszhoz</h1>
 
       <p className="centerLead">
         A Concept Gym gépparkja úgy lett kialakítva, hogy kezdők és haladók is

@@ -13,7 +13,7 @@ export default function HomePage() {
           <div>
             <span className="eyebrow">BUDAPEST • ERŐ • FÓKUSZ</span>
 
-            <h1>Hozd ki magadból a maximumot.</h1>
+            <h1>Hozd ki magadból a maximumot</h1>
 
             <p className="heroLead">
               A Concept Gym modern, lendületes edzőtér prémium gépparkkal,
@@ -38,7 +38,7 @@ export default function HomePage() {
 
           <article className="newsCardWhite">
             <span className="eyebrow">AKTUÁLIS HÍREINK</span>
-            <h2>Új gépek, friss órarend, erősebb közösség.</h2>
+            <h2>Új gépek, friss órarend, erősebb közösség</h2>
 
             <ul>
               <li>Júliustól új lábgépek és plate-loaded állomások érkeznek.</li>

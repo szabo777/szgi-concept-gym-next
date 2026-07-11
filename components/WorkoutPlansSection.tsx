@@ -11,7 +11,7 @@ export default function WorkoutPlansSection() {
   return (
     <section className="pageSectionDark plansPage">
       <span className="eyebrow">EDZÉSTERVEK</span>
-      <h1>Ajánlott edzésterveink.</h1>
+      <h1>Ajánlott edzésterveink</h1>
 
       <p className="centerLead">
         Ezek az edzéstervek iránymutatásként szolgálnak. Kezdőknek különösen

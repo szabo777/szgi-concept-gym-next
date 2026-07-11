@@ -5,7 +5,7 @@ export default function ContactSection() {
   return (
     <section className="pageSectionDark contactPage">
       <span className="eyebrow">KAPCSOLAT</span>
-      <h1>Itt találsz meg minket.</h1>
+      <h1>Itt találsz meg minket</h1>
 
       <p className="centerLead">
         Kérdésed van a bérletekkel, gépparkkal, edzőkkel vagy nyitvatartással

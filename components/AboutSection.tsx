@@ -8,7 +8,7 @@ export default function AboutSection() {
         <div>
           <span className="eyebrow">RÓLUNK</span>
 
-          <h2>Nem csak terem, hanem egy közösség.</h2>
+          <h2>Nem csak terem, hanem egy közösség</h2>
 
           <p>
             A Concept Gym egy nagy intenzitású, modern edzőtér Astoria

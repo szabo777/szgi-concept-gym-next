@@ -16,7 +16,7 @@ export default function PricingSection({ isStandalone = false }: PricingSectionP
       className={isStandalone ? "pageSectionDark pricingPage" : "pricingHome"}
     >
       <span className="eyebrow">ÁRAK</span>
-      <h1>Válassz bérletet az edzésed tempójához.</h1>
+      <h1>Válassz bérletet az edzésed tempójához</h1>
 
       <div className="toggle">
         <button

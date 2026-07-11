@@ -11,7 +11,7 @@ export default function NewsSection() {
   return (
     <section className="pageSectionDark newsPage">
       <span className="eyebrow">HÍREINK</span>
-      <h1>Új gépek, friss órarend, erősebb közösség.</h1>
+      <h1>Új gépek, friss órarend, erősebb közösség</h1>
 
       <div className="newsGrid">
         {newsPosts.map((post) => (
